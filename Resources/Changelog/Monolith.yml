@@ -13587,3 +13587,12 @@ Entries:
   id: 1503
   time: '2025-10-31T20:08:38.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2501
+- author: Avalon-Proto
+  changes:
+    - type: Add
+      message: >-
+        New Heavy Ballistic turrets are now available in sector, for your secure
+        locations
+  id: 1504
+  time: '2025-11-01T15:44:30.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2510
