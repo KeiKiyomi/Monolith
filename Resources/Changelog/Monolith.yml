@@ -13677,3 +13677,10 @@ Entries:
   id: 1514
   time: '2025-11-07T00:06:50.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2569
+- author: prototypemeat
+  changes:
+    - type: Tweak
+      message: Silos can be linked to Ore Processors
+  id: 1515
+  time: '2025-11-07T00:08:56.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2568
