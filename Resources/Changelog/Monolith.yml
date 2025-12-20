@@ -15080,3 +15080,12 @@ Entries:
   id: 1671
   time: '2025-12-20T17:55:38.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2825
+- author: whythelettuce
+  changes:
+    - type: Add
+      message: 'Velios: New Medical Shuttle'
+    - type: Remove
+      message: Removed Shirokami
+  id: 1672
+  time: '2025-12-20T18:36:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2715
