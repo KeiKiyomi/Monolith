@@ -15323,3 +15323,12 @@ Entries:
   id: 1700
   time: '2025-12-29T13:08:11.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2896
+- author: Helicaste
+  changes:
+    - type: Fix
+      message: >-
+        PDV headsets now have the default encryption key capacity of 10. Like
+        every other headset.
+  id: 1701
+  time: '2025-12-30T10:07:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2894
