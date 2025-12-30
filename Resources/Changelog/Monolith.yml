@@ -15402,3 +15402,10 @@ Entries:
   id: 1708
   time: '2025-12-30T18:00:08.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2895
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: Fixed advanced radar console having 4x visual detection than intended.
+  id: 1709
+  time: '2025-12-30T19:00:45.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2902
