@@ -15686,3 +15686,10 @@ Entries:
   id: 1741
   time: '2026-01-02T14:41:20.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2927
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: EMP Disable duration no longer stacks up.
+  id: 1742
+  time: '2026-01-02T17:52:01.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2931
