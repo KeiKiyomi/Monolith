@@ -15661,3 +15661,12 @@ Entries:
   id: 1738
   time: '2026-01-02T04:06:43.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2834
+- author: Arcticular1
+  changes:
+    - type: Fix
+      message: >-
+        Colonels suit has fire resistance and their glasses can now see in the
+        dark.
+  id: 1739
+  time: '2026-01-02T04:25:00.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2925
