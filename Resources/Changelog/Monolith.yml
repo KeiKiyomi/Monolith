@@ -15907,3 +15907,12 @@ Entries:
   id: 1764
   time: '2026-01-08T20:24:43.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2968
+- author: tonotom1
+  changes:
+    - type: Add
+      message: The Svinya was added to the USSP shipyard to replace the Gadyuka!
+    - type: Remove
+      message: Goodnight, Gadyuka. You have served well.
+  id: 1765
+  time: '2026-01-08T20:53:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2941
