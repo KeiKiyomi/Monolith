@@ -15967,3 +15967,12 @@ Entries:
   id: 1770
   time: '2026-01-09T14:12:00.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/2992
+- author: Arcticular1
+  changes:
+    - type: Remove
+      message: Removed the prowler and sable.
+    - type: Add
+      message: Hazel is now in the Jupiter shipyard
+  id: 1771
+  time: '2026-01-09T14:21:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2990
