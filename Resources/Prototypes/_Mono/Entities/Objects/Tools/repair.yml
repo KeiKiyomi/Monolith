@@ -6,6 +6,9 @@
   abstract: true
   components:
   - type: ShipRepairTool
+  - type: GuideHelp
+    guides:
+    - ExpandingRepairingStation
   - type: Sprite
     scale: 0.8, 0.8
     sprite: _Mono/Objects/Tools/repair_device_item.rsi
@@ -114,3 +117,4 @@
   - type: StaticPrice
     price: 2000
     vendPrice: 8000
+  

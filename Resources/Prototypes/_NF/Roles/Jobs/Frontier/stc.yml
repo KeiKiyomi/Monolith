@@ -12,6 +12,7 @@
       role: JobSecurityGuard
       time: 3600 # 3 hrs as security guard # mono - change to 1 hr
   canBeAntag: false
+  guides: [ ColonialStaff, StationTrafficController ] # Mono
   icon: "JobIconStc"
   supervisors: job-supervisors-sr
   weight: 160

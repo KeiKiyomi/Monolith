@@ -13,6 +13,7 @@
   weight: 100
   displayWeight: 40
   canBeAntag: false
+  guides: [ ColonialStaff, Janitor ] # Mono
   access:
   - Service
   - Janitor
