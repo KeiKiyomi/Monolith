@@ -4,7 +4,7 @@
   text: "/ServerInfo/Guidebook/Medical/Medical.xml"
   children:
   - DirectorOfCare # Frontier
-  - Medical Doctor
+  - EmergencyResponder
   - Chemist
   - Cloning
   - Cryogenics # Note: Frontier changes inside
@@ -12,9 +12,9 @@
   - MedicalBounties # Frontier
 
 - type: guideEntry
-  id: Medical Doctor
-  name: guide-entry-medicaldoctor
-  text: "/ServerInfo/Guidebook/Medical/MedicalDoctor.xml"
+  id: EmergencyResponder
+  name: guide-entry-emergencyresponder
+  text: "/ServerInfo/Guidebook/Medical/EmergencyResponder.xml"
 
 - type: guideEntry
   id: Cloning
