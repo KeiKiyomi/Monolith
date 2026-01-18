@@ -21,6 +21,7 @@
   weight: 170
   displayWeight: 60 # Second from the top # mono - first from top
   canBeAntag: false
+  guides: [ Medical, DirectorOfCare ] # Mono
   accessGroups:
   - AllAccessSR
   special:

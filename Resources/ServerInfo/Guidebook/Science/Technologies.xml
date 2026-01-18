@@ -17,4 +17,13 @@ The different technologies and their respective discipline are listed below.
 ## Civilian Services
 <GuideTechDisciplineEmbed Discipline="CivilianServices"/>
 
+##Faction TSF
+<GuideEntityEmbed Entity="BannerNfsd" Caption="TSFMC"/>
+
+## Faction USSP
+<GuideEntityEmbed Entity="BannerRed" Caption="USSP"/>
+
+## Faction PDV
+<GuideEntityEmbed Entity="BannerYellow" Caption="PDV"/>
+
 </Document>

@@ -32,4 +32,19 @@ guide-entry-cortical-borer = Cortical Borer
 guide-entry-mechs = Mechs
 guide-entry-s1mechs = Series 1 Mechs
 guide-entry-s2mechs = Series 2 Mechs
+guide-entry-s3mechs = Series 3 Mechs # a myth by the TSF
 guide-entry-s4mechs = Series 4 Mechs
+
+# Colonial Staff
+guide-entry-colonial = Colonial Staff
+guide-entry-colonialoverseer = Colonial Overseer
+guide-entry-colonialstc = Station Traffic Controller
+guide-entry-colonialsecurity = Colonial Security
+guide-entry-colonialserviceworker = Colonial Service Worker
+guide-entry-colonialjanitor = Colonial Janitor
+# Colonial Staff, Children
+guide-entry-stcfines = STC Fines
+guide-entry-alternatestations = Alternative Stations
+
+# Medical Dispatch
+guide-entry-emergencyresponder = Emergency Responder
