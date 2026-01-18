@@ -16244,3 +16244,12 @@ Entries:
   id: 1797
   time: '2026-01-17T01:24:44.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3038
+- author: Ilya246
+  changes:
+    - type: Fix
+      message: >-
+        Fixed minor radar rendering errors involving half-tilt and half-width
+        tile variants.
+  id: 1798
+  time: '2026-01-17T17:02:31.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3049
