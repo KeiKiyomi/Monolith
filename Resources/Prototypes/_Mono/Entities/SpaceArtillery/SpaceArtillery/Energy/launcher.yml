@@ -62,6 +62,7 @@
         sound:
           collection: MetalBreak
   - type: RadarBlip
+    visibleFromOtherGrids: true
     radarColor: "#C92BCC"
     scale: 2
   - type: ShipGunType
@@ -211,6 +212,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 1.5
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -291,6 +293,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 1
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -355,6 +358,7 @@
   - type: RadarBlip
     radarColor: "#035EFC"
     scale: 2
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -510,6 +514,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 3
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -719,6 +724,7 @@
   - type: RadarBlip
     radarColor: "#e67a22"
     scale: 2
+    visibleFromOtherGrids: true
   - type: Fixtures
     fixtures:
       fix1:
@@ -810,6 +816,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 3
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -893,6 +900,7 @@
   - type: RadarBlip
     radarColor: "#5bc65d"
     scale: 3
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -976,6 +984,7 @@
   - type: RadarBlip
     radarColor: "#450089"
     scale: 3
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -1053,6 +1062,7 @@
   - type: RadarBlip
     radarColor: "#ff9d00"
     scale: 2
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
@@ -1131,6 +1141,7 @@
   - type: RadarBlip
     radarColor: "#C92BCC"
     scale: 1.5
+    visibleFromOtherGrids: true
   - type: ShipGunType
     shipType: Energy
   - type: ShipGunClass
