@@ -16290,3 +16290,14 @@ Entries:
   id: 1803
   time: '2026-01-19T13:00:48.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3057
+- author: AthrunZala33092
+  changes:
+    - type: Add
+      message: Added Tactical forcefield projector to the TSFMC uplink for 55 FMC.
+    - type: Tweak
+      message: Captains now get 100 FMC in their uplink instead of the base 75.
+    - type: Add
+      message: TSFMC dress uniform added to cryo wardrobe vendor.
+  id: 1804
+  time: '2026-01-19T16:13:24.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3040
