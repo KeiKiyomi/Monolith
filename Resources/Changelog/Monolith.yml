@@ -16506,3 +16506,10 @@ Entries:
   id: 1828
   time: '2026-01-22T20:52:29.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3107
+- author: Arcticular1
+  changes:
+    - type: Tweak
+      message: Andromeda's armor has received a considerable nerf.
+  id: 1829
+  time: '2026-01-23T02:22:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3102
