@@ -25,7 +25,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 7
+    lifetime: 10
   - type: PointLight
     color: "#FF0040"
   - type: ExplodeOnTrigger
@@ -111,7 +111,7 @@
     requireNoGrid: true
     shape: arrow
   - type: TimedDespawn
-    lifetime: 4.2
+    lifetime: 2.8
   - type: PointLight
     radarColor: "#FF0040"
   - type: ExplodeOnTrigger
@@ -133,9 +133,9 @@
   - type: Projectile
     damage:
       types:
-        Radiation: 10
-        Structural: 80
-        Heat: 40
+        Radiation: 5
+        Structural: 60
+        Heat: 30
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
     layers:
@@ -148,7 +148,7 @@
     requireNoGrid: true
     shape: arrow
   - type: TimedDespawn
-    lifetime: 4.2
+    lifetime: 2.1
   - type: PointLight
     radarColor: "#00e5ff"
   - type: ExplodeOnTrigger
@@ -384,6 +384,43 @@
     lightningProto: LightningEMP
     lightningEffects: false
 
+# Tartarus
+
+- type: entity
+  id: ShipAntiMatterProjectile
+  name: antimatter projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 200
+        Structural: 500
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Projectiles/ship_projectiles.rsi
+    layers:
+    - state: antimatter-particle
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectTempHot
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#ab0707"
+    scale: 3
+    requireNoGrid: true
+    shape: circle
+  - type: TimedDespawn
+    lifetime: 4.5
+  - type: PointLight
+    color: "#ab0707"
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120
+    intensitySlope: 5
+    maxIntensity: 45
+    maxTileBreak: 4
+
 
 # region Laser Hitscans
 
@@ -555,7 +592,7 @@
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: HardBombShipGun
+    explosionType: Default
     totalIntensity: 6000
     intensitySlope: 35
     maxIntensity: 700
@@ -567,7 +604,7 @@
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: HardBombShipGun
+    explosionType: Default
     totalIntensity: 22
     intensitySlope: 2
     maxIntensity: 5

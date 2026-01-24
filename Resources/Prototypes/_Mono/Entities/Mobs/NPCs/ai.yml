@@ -188,6 +188,17 @@
     rootTask:
       task: DroneCompoundMedusa
 
+- type: entity
+  id: NpcDroneAiAssembly
+  parent: NpcStationAiAttacker
+  description: Shoots at you. Broadsides.
+  suffix: AI, Drone-Assembly
+  components:
+  - type: HTN
+    sleepPlayerCheckRangeOverride: 4000
+    rootTask:
+      task: DroneCompoundAssembly
+
 #region Spawners
 
 - type: entity
@@ -309,3 +320,13 @@
   - type: ConditionalSpawner
     prototypes:
     - NpcDroneAiMedusa
+
+- type: entity
+  name: attacker core spawner
+  id: SpawnMobDroneAiAssembly
+  parent: SpawnMobAttackerCore
+  suffix: Broadside, Drone-Assembly
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NpcDroneAiAssembly
