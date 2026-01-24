@@ -42,6 +42,7 @@ guide-entry-colonialstc = Station Traffic Controller
 guide-entry-colonialsecurity = Colonial Security
 guide-entry-colonialserviceworker = Colonial Service Worker
 guide-entry-colonialjanitor = Colonial Janitor
+guide-entry-colonialmail = Mail Carrier
 # Colonial Staff, Children
 guide-entry-stcfines = STC Fines
 guide-entry-alternatestations = Alternative Stations
