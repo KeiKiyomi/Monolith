@@ -45,7 +45,8 @@
     - PillMesotaxinide
     - PillMesotaxinide
     - Handcuffs
-    - Handcuffs
+    - TrackingImplanter
+    - MedicalTrackingImplanterLabeled
     belt:
     - AmmoBox12_gaugeIncendiary
     - AmmoBox12_gaugeIncendiary
@@ -55,3 +56,4 @@
     - BluespaceLifelineImplanter
     - RadioImplanterCentcomm
     - HandHeldMassScannerBorg
+    - Handcuffs
