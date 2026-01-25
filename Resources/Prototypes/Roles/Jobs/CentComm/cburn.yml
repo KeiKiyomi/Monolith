@@ -45,6 +45,7 @@
     - PillMesotaxinide
     - PillMesotaxinide
     - Handcuffs
+    - Handcuffs
     - TrackingImplanter
     - MedicalTrackingImplanterLabeled
     belt:
@@ -56,4 +57,3 @@
     - BluespaceLifelineImplanter
     - RadioImplanterCentcomm
     - HandHeldMassScannerBorg
-    - Handcuffs
