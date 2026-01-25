@@ -40,21 +40,21 @@
     - MedkitCombatFilled
     - ShipVoucherFrontierGuard
     - GrenadeIncendiaryNfsd
-    - WeaponEnergyShotgun
+    - WeaponEnergyShotgun # NT Energy Shotgun
     - SyringeCaseAltFilled
-    - PillMesotaxinide
-    - PillMesotaxinide
+    - PillMesotaxinide # Meso 15u
+    - PillMesotaxinide # Meso 15u
     - Handcuffs
     - Handcuffs
-    - TrackingImplanter
-    - MedicalTrackingImplanterLabeled
+    - TrackingImplanter # TSFMC tracker
+    - MedicalTrackingImplanterLabeled # Medical Dispatch Tracker
     belt:
     - AmmoBox12_gaugeIncendiary
     - AmmoBox12_gaugeIncendiary
     - SyndicateJawsOfLife
     - PowerDrill
     - WelderExperimental
-    - BluespaceLifelineImplanter
-    - RadioImplanterCentcomm
-    - HandHeldMassScannerBorg
-    # test
+    - BluespaceLifelineImplanter # Stops stealing of their gear
+    - RadioImplanterCentcomm # Headset theft means nothing!
+    - HandHeldMassScannerBorg # Just for the infiniste battery
+    
