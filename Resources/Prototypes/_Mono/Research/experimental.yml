@@ -16,15 +16,16 @@
   name: research-technology-bluespace-tethering
   entityIcon: ClothingShoesBootsMagVoid
   discipline: Experimental
-  tier: 2 # normal magboots are t1 so t2
+  tier: 3 # normal magboots are t1 so t2, hi editing this in future, made tacmags requirement so now tier 3
   cost: 25000
   recipeUnlocks:
   - ClothingShoesBootsMagVoid
   technologyPrerequisites:
   - MagnetsTech
-  position: -2, -2
+  - MagnetTacticalApplications
+  position: -2, -3
 
-    - type: technology
+- type: technology
   id: MagnetsSpeedTech
   name: research-technology-magnets-speed-tech
   entityIcon: ClothingShoesBootsMagSci
@@ -38,7 +39,23 @@
   - MagnetsTechAdvanced
   - PortableFission
   - BluespaceTethering
-  position: -2, -1
+  - MagnetTacticalApplications
+  position: -4, -2
+
+- type: technology
+  id: MagnetTacticalApplications
+  name: research-technology-tactical-mags
+  entityIcon: ClothingShoesBootsMagAshen
+  discipline: Experimental
+  tier: 1
+  cost: 55000
+  recipeUnlocks:
+  - ClothingShoesBootsMagAshen
+  technologyPrerequisites:
+  - SuperParts
+  - AdvancedPersonalPropulsion
+  - MagnetsTechCombat
+  position: -2, -2
 
 - type: technology
   id: BasicResearch

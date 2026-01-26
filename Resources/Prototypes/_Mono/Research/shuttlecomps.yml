@@ -11,7 +11,6 @@
   - GunneryControlComputerCircuitboard
   - MachineGCSLowCircuitboard
   - MachineGCSMediumCircuitboard
-  - MachineGCSHighCircuitboard
   - AdvancedRadarConsoleCircuitboard
   - ComputerIFFCircuitboard
   - MachineDriveCTLA25Circuitboard
@@ -20,6 +19,36 @@
   - SuperParts
   position: -6, 7
 
+- type: technology
+  id: ShuttleAdvancedGunnery
+  name: research-technology-shuttle-advanced-gunnery
+  entityIcon: ComputerGunneryConsole
+  discipline: Experimental
+  tier: 4
+  cost: 75000
+  recipeUnlocks:
+  - MachineGCSHighCircuitboard
+  - MachineGCSUltraCircuitboard
+  technologyPrerequisites:
+  - Shuttlecraft
+  - SuperParts
+  - ShuttleAdvancedComponents
+  position: -6, 7
+
+- type: technology
+  id: ShuttleShieldingTech
+  name: research-technology-shuttle-shield-tech
+  entityIcon: ShieldGeneratorSmall
+  discipline: Experimental
+  tier: 4
+  cost: 75000
+  recipeUnlocks:
+  - MachineShieldMS100Circuitboard
+  technologyPrerequisites:
+  - Shuttlecraft
+  - SuperParts
+  - ShuttleAdvancedComponents
+  position: -7, 7
 
 - type: technology
   id: ShuttleCtlaAdvancedDriveResearch

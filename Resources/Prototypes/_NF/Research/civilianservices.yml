@@ -114,6 +114,10 @@
   cost: 15000
   recipeUnlocks:
   - JetpackVoid
+  - JetpackBlackFilled
+  - JetpackBlueFilled
+  - JetpackSecurityFilled
+  - JetpackMiniFilled
   technologyPrerequisites:
   - Shuttlecraft
   position: -4, 7

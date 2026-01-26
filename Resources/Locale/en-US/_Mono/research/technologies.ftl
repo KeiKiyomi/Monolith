@@ -17,3 +17,9 @@ research-technology-mechs-combat = Combat Mech Production
 
 research-technology-basic-economy = Portable Processing Equipment
 research-technology-uranium-processing-advanced = Advanced Uranium Processing
+
+research-technology-cloning-solutions = Cloning solutions
+research-technology-magents-speed-tech = Magnetic Speed Technology
+research-technology-tactical-mags = Tactical Magnetic Technology
+research-technology-shuttle-shield-tech = Basic Shuttle Shield Technology
+research-technology-shuttle-advanced-gunnery = Advanced Shuttle Gunnery

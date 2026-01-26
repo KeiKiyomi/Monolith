@@ -10,6 +10,50 @@
     Silver: 800
 
 - type: latheRecipe
+  id: JetpackBlackFilled
+  result: JetpackBlackFilled
+  completetime: 15
+  materials:
+    Steel: 3000
+    Glass: 1500
+    Plastic: 1000
+    Gold: 300
+    Silver: 800
+
+- type: latheRecipe
+  id: JetpackBlueFilled
+  result: JetpackBlueFilled
+  completetime: 15
+  materials:
+    Steel: 3000
+    Glass: 1500
+    Plastic: 1000
+    Gold: 300
+    Silver: 800
+
+- type: latheRecipe
+  id: JetpackSecurityFilled
+  result: JetpackBlueFilled
+  completetime: 15
+  materials:
+    Steel: 3000
+    Glass: 1500
+    Plastic: 1000
+    Gold: 300
+    Silver: 800
+
+- type: latheRecipe
+  id: JetpackMiniFilled
+  result: JetpackMiniFilled
+  completetime: 20
+  materials:
+    Steel: 4000
+    Glass: 2000
+    Plastic: 1500
+    Gold: 100
+    Silver: 300
+
+- type: latheRecipe
   id: ClothingBackpackMessengerHolding
   result: ClothingBackpackMessengerHolding
   completetime: 5
