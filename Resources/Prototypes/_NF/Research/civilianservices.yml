@@ -90,6 +90,22 @@
   position: -2, 10
 
 - type: technology
+  id: CloningSolutions
+  name: research-technology-cloning-solutions
+  entityIcon: CloningPod
+  discipline: CivilianServices
+  tier: 2
+  cost: 25000
+  recipeUnlocks:
+  - CloningConsoleComputerCircuitboard
+  - CloningPodMachineCircuitboard
+  - MedicalScannerMachineCircuitboard
+  technologyPrerequisites:
+  - SuperParts
+  - IndustrialMedicine
+  position: -3, 11
+
+- type: technology
   id: AdvancedPersonalPropulsion
   name: research-technology-advanced-personal-propulsion
   entityIcon: JetpackVoid

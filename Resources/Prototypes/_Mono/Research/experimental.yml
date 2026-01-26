@@ -24,6 +24,22 @@
   - MagnetsTech
   position: -2, -2
 
+    - type: technology
+  id: MagnetsSpeedTech
+  name: research-technology-magnets-speed-tech
+  entityIcon: ClothingShoesBootsMagSci
+  discipline: Experimental
+  tier: 1
+  cost: 100000
+  recipeUnlocks:
+  - ClothingShoesBootsSpeed
+  technologyPrerequisites:
+  - SuperParts
+  - MagnetsTechAdvanced
+  - PortableFission
+  - BluespaceTethering
+  position: -2, -1
+
 - type: technology
   id: BasicResearch
   name: research-technology-basic-research

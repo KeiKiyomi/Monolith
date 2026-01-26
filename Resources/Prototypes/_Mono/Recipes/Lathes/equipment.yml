@@ -26,6 +26,22 @@
     Plasma: 500
     Silver: 200
 
+- type: latheRecipe
+  id: ClothingShoesBootsSpeed
+  result: ClothingShoesBootsSpeed
+  completetime: 30
+  materials:
+    Steel: 5000 #50
+    Plastic: 2500 #25
+    Plasma: 2500 #25
+    Silver: 500 #5
+    Gold: 100 #1
+    UraniumDepleted: 1000 #10
+    Uranium: 2500 #25
+    UraniumFissile: 100 #1
+    Durathread: 1000 #10
+    Diamond: 200 #2
+
 # Ullman Stuff
 
 - type: latheRecipe
