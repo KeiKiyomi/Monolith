@@ -45,6 +45,11 @@
 
 - type: latheRecipe
   parent: BaseGoldCircuitboardRecipe
+  id: MachineGCSHighCircuitboard
+  result: MachineGCSUltraCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
   id: AdvancedRadarConsoleCircuitboard
   result: AdvancedRadarConsoleCircuitboard
 
@@ -106,3 +111,4 @@
   parent: BaseGoldCircuitboardRecipe
   id: MedicalScannerMachineCircuitboard
   result: MedicalScannerMachineCircuitboard  
+
