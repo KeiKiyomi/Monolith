@@ -132,6 +132,21 @@
     },
     {
       "name": "syndicate"
+    },
+    {
+      "name": "xenoborg_engi"
+    },
+    {
+     "name": "xenoborg_generic"
+    },
+    {
+    "name": "xenoborg_heavy"
+    },
+    {
+    "name": "xenoborg_scout"
+    },
+    {
+    "name": "xenoborg_stealth"
     }
   ]
 }
