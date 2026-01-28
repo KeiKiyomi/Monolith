@@ -16700,3 +16700,10 @@ Entries:
   id: 1848
   time: '2026-01-26T16:18:51.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3124
+- author: mikusssssss
+  changes:
+    - type: Fix
+      message: Printed welding tools should now have the proper capacities.
+  id: 1849
+  time: '2026-01-28T20:21:08.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3130
