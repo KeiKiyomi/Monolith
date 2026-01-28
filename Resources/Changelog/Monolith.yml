@@ -16604,3 +16604,99 @@ Entries:
   id: 1838
   time: '2026-01-25T19:06:18.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3080
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: Mass scanners now may be used outside of your active hand.
+  id: 1839
+  time: '2026-01-26T15:34:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3125
+- author: tonotom1
+  changes:
+    - type: Tweak
+      message: >-
+        Union Wrightworks ships (Svinya, Stubby, Medicus, Sellsword, Takeaway)
+        and Spessbite received edge markers
+    - type: Tweak
+      message: >-
+        Medicus atmos room improved: added air sensors for measuring reserve
+        contents.
+  id: 1840
+  time: '2026-01-26T15:36:35.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3089
+- author: Greenwall-Exe
+  changes:
+    - type: Add
+      message: Added Jump Boots and the ability to Jump
+  id: 1841
+  time: '2026-01-26T15:37:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2973
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: PKA projectiles can now pierce up to 5 rocks in a row.
+    - type: Tweak
+      message: Seismic charges no longer throw entities around on explosion.
+  id: 1842
+  time: '2026-01-26T15:39:50.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3115
+- author: Greenwall-Exe
+  changes:
+    - type: Add
+      message: The Tintreach
+  id: 1843
+  time: '2026-01-26T15:40:33.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3111
+- author: thoughtlessuser
+  changes:
+    - type: Add
+      message: The Comet, a retired utility ship, has hit the exped shelves.
+    - type: Remove
+      message: Explodes your Meteor with mind.
+  id: 1844
+  time: '2026-01-26T15:41:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3097
+- author: KeiKiyomi
+  changes:
+    - type: Tweak
+      message: Changed CentComm CBURN gear
+  id: 1845
+  time: '2026-01-26T15:53:16.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3122
+- author: EldritchPineapple
+  changes:
+    - type: Tweak
+      message: Diagonaled the Shiv because i could
+  id: 1846
+  time: '2026-01-26T16:06:13.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/2965
+- author: NazrinNya
+  changes:
+    - type: Tweak
+      message: Mini-hypos are generally better now.
+    - type: Tweak
+      message: >-
+        Advanced chemicals now have 0.15u metabolism rate. Pyrazine healing was
+        buffed to 2. 
+    - type: Tweak
+      message: Overseer's heavy maul sprite received changes.
+  id: 1847
+  time: '2026-01-26T16:06:53.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3095
+- author: Ilya246
+  changes:
+    - type: Tweak
+      message: >-
+        Ported grappling hook update from Wizden. Grappling hooks now obey
+        physics.
+    - type: Fix
+      message: Fixed a lot of grappling hook bugs (same Wizden port).
+    - type: Fix
+      message: Grappling hook now works at long range.
+    - type: Tweak
+      message: Grappling hook significantly buffed.
+    - type: Tweak
+      message: Grappling hook can now pull in mobs (including people) and crates.
+  id: 1848
+  time: '2026-01-26T16:18:51.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3124
