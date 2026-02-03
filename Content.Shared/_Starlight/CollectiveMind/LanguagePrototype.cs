@@ -1,134 +1,115 @@
-using System.Text;
-using Content.Shared._Starlight.Language.Systems;
+using Content.Shared.Chat;
+using Content.Shared.StatusIcon;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Starlight.Language;
 
-[ImplicitDataDefinitionForInheritors]
-public abstract partial class ObfuscationMethod
+[Prototype("language")]
+public sealed partial class LanguagePrototype : IPrototype
 {
-    /// <summary>
-    ///     The fallback obfuscation method, replaces the message with the string "&lt;?&gt;".
-    /// </summary>
-    public static readonly ObfuscationMethod Default = new ReplacementObfuscation
-    {
-        Replacement = new List<string> { "<?>" }
-    };
+    [IdDataField]
+    public string ID { get; private set; } = default!;
 
     /// <summary>
-    ///     Obfuscates the provided message and writes the result into the provided StringBuilder.
-    ///     Implementations should use the context's pseudo-random number generator and provide stable obfuscations.
+    /// Icon of the language visible in chat/bubbles.
     /// </summary>
-    internal abstract void Obfuscate(StringBuilder builder, string message, SharedLanguageSystem context);
+    [DataField("icon")]
+    public ProtoId<JobIconPrototype> Icon = "LanguageIconUnknown";
 
     /// <summary>
-    ///     Obfuscates the provided message. This method should only be used for debugging purposes.
-    ///     For all other purposes, use <see cref="SharedLanguageSystem.ObfuscateSpeech"/> instead.
+    /// Show the Icon if understood.
     /// </summary>
-    public string Obfuscate(string message)
-    {
-        var builder = new StringBuilder();
-        Obfuscate(builder, message, IoCManager.Resolve<EntitySystemManager>().GetEntitySystem<SharedLanguageSystem>());
-        return builder.ToString();
-    }
+    [DataField("iconUnderstood")]
+    public bool IconVisibleIfUnderstood = true;
+
+    /// <summary>
+    /// Show the Icon if not understood.
+    /// </summary>
+    [DataField("iconNotUnderstood")]
+    public bool IconVisibleIfNotUnderstood = true;
+
+    /// <summary>
+    ///     Obfuscation method used by this language. By default, uses <see cref="ObfuscationMethod.Default"/>.
+    /// </summary>
+    [DataField("obfuscation")]
+    public ObfuscationMethod Obfuscation = ObfuscationMethod.Default;
+
+    /// <summary>
+    ///     Speech overrides used for messages sent in this language.
+    /// </summary>
+    [DataField("speech")]
+    public SpeechOverrideInfo SpeechOverride = new();
+
+    #region utility
+    /// <summary>
+    ///     The in-world name of this language, localized.
+    /// </summary>
+    public string Name => Loc.GetString($"language-{ID}-name");
+
+    /// <summary>
+    ///     The in-world description of this language, localized.
+    /// </summary>
+    public string Description => Loc.GetString($"language-{ID}-description");
+    #endregion utility
 }
 
-/// <summary>
-///  Obfuscate the string letters/numbers to random, keeps special characters and spaces.
-/// </summary>
-public partial class RandomObfuscation : ObfuscationMethod
-{
-    internal override void Obfuscate(StringBuilder builder, string message, SharedLanguageSystem context)
-    {
-        const string Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        message = message.ToUpper();
-
-        for (int i = 0; i < Chars.Length; i++)
-        {
-            message = message.Replace(Chars[i], Chars[context.PseudoRandomNumber(message.GetHashCode() + i, 0, Chars.Length - 1)]);
-        }
-
-        builder.Append(message);
-    }
-}
-
-/// <summary>
-///     The most primitive method of obfuscation - replaces the entire message with one random replacement phrase.
-///     Similar to ReplacementAccent. Base for all replacement-based obfuscation methods.
-/// </summary>
-public partial class ReplacementObfuscation : ObfuscationMethod
+[DataDefinition]
+public sealed partial class SpeechOverrideInfo
 {
     /// <summary>
-    ///     A list of replacement phrases used in the obfuscation process.
+    ///     Color which text in this language will be blended with.
+    ///     Alpha blending is used, which means the alpha component of the color controls the intensity of this color.
     /// </summary>
-    [DataField(required: true)]
-    public List<string> Replacement = [];
-
-    internal override void Obfuscate(StringBuilder builder, string message, SharedLanguageSystem context)
-    {
-        var idx = context.PseudoRandomNumber(message.GetHashCode(), 0, Replacement.Count - 1);
-        builder.Append(Replacement[idx]);
-    }
-}
-
-/// <summary>
-///     Obfuscates the provided message by replacing each word with a random number of syllables in the range (min, max),
-///     preserving the original punctuation to a resonable extent.
-/// </summary>
-/// <remarks>
-///     The words are obfuscated in a stable manner, such that every particular word will be obfuscated the same way throughout one round.
-///     This means that particular words can be memorized within a round, but not across rounds.
-/// </remarks>
-public sealed partial class SyllableObfuscation : ReplacementObfuscation
-{
     [DataField]
-    public int MinSyllables = 1;
+    public Color? Color = null;
 
     [DataField]
-    public int MaxSyllables = 4;
+    public string? FontId;
 
-    internal override void Obfuscate(StringBuilder builder, string message, SharedLanguageSystem context)
-    {
-        const char eof = (char) 0; // Special character to mark the end of the message in the code below.
+    /// <summary>
+    /// Only show the font when we Obfuscate the message (if not understood)
+    /// </summary>
+    [DataField]
+    public bool? ObfuscationFont = false;
 
-        var wordBeginIndex = 0;
-        var hashCode = 0;
+    [DataField]
+    public int? FontSize;
 
-        for (var i = 0; i <= message.Length; i++)
-        {
-            var ch = i < message.Length ? char.ToLower(message[i]) : eof;
-            var isWordEnd = char.IsWhiteSpace(ch) || IsPunctuation(ch) || ch == eof;
+    [DataField]
+    public bool AllowRadio = true;
 
-            // If this is a normal char, add it to the hash sum
-            if (!isWordEnd)
-                hashCode = hashCode * 31 + ch;
+    /// <summary>
+    ///     If false, the entity can use this language even when it's unable to speak (i.e. muffled or muted),
+    ///     and accents are not applied to messages in this language.
+    /// </summary>
+    [DataField]
+    public bool RequireSpeech = true;
 
-            // If a word ends before this character, construct a new word and append it to the new message.
-            if (isWordEnd)
-            {
-                var wordLength = i - wordBeginIndex;
-                if (wordLength > 0)
-                {
-                    var newWordLength = context.PseudoRandomNumber(hashCode, MinSyllables, MaxSyllables);
+    /// <summary>
+    ///     If true, requires the entity to have usable hands and be able to interact (not be cuffed, etc).
+    /// </summary>
+    [DataField]
+    public bool RequireHands = false;
 
-                    for (var j = 0; j < newWordLength; j++)
-                    {
-                        var index = context.PseudoRandomNumber(hashCode + j, 0, Replacement.Count - 1);
-                        builder.Append(Replacement[index]);
-                    }
-                }
+    /// <summary>
+    ///     If not null, all messages in this language will be forced to be spoken in this chat type.
+    /// </summary>
+    [DataField]
+    public InGameICChatType? ChatTypeOverride;
 
-                hashCode = 0;
-                wordBeginIndex = i + 1;
-            }
+    /// <summary>
+    ///     Speech verb overrides. If not provided, the default ones for the entity are used.
+    /// </summary>
+    [DataField]
+    public List<LocId>? SpeechVerbOverrides;
 
-            // If this message concludes a word (i.e. is a whitespace or a punctuation mark), append it to the message
-            if (isWordEnd && ch != eof)
-                builder.Append(ch);
-        }
-    }
-
-    private static bool IsPunctuation(char ch)
-    {
-        return ch is '.' or '!' or '?' or ',' or ':';
-    }
+    /// <summary>
+    ///     Overrides for different kinds chat message wraps. If not provided, the default ones are used.
+    /// </summary>
+    /// <remarks>
+    ///     Currently, only local chat and whispers support this. Radio and emotes are unaffected.
+    ///     This is horrible.
+    /// </remarks>
+    [DataField]
+    public Dictionary<InGameICChatType, LocId> MessageWrapOverrides = new();
 }
