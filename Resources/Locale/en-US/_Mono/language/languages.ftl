@@ -12,11 +12,11 @@ language-EncryptedPDV-description = An advanced Dynasty Speech Encryption implan
 
 language-EncryptedTSF-name = Solarian Encryption
 chat-language-EncryptedTSF-name = Solarian Encryption
-language-EncryptedTSF-description = An advanced Dynasty Speech Encryption implant, exclusive to the most important people.
+language-EncryptedTSF-description = An advanced Solarian Speech Encryption implant, exclusive to the most important people.
 
 language-EncryptedCC-name = Colonial Encryption
 chat-language-EncryptedCC-name = Colonial Encryption
-language-EncryptedCC-description = An advanced Dynasty Speech Encryption implant, exclusive to the most important people.
+language-EncryptedCC-description = An advanced High Command Speech Encryption implant, exclusive to the most important people.
 
 language-EncryptedSpare-name = Encrypted Speech
 chat-language-EncryptedSpare-name = Encrypted Speech
