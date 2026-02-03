@@ -4,7 +4,7 @@
   id: Solarian Encryption
   isVisibleLanguage: false
   speech:
-    color: "#6174ff"
+    color: "#8282fbaa"
     fontId: Octatrax
     obfuscationFont: true
   obfuscation:
