@@ -1,7 +1,7 @@
 # I really dont know what these mean. I just took these from https://en.wikipedia.org/wiki/Cyrillization_of_Chinese
 
 - type: language
-  id: EncryptionTSF
+  id: Colonial Encryption
   isVisibleLanguage: false
   speech:
     color: "#a13a2ddd"
