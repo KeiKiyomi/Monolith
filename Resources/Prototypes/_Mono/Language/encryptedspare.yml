@@ -4,7 +4,7 @@
   id: Encrypted Speech
   isVisibleLanguage: false
   speech:
-    color: "#6174ff"
+    color: "#a13a2ddd"
     fontId: Octatrax
     obfuscationFont: true
   obfuscation:
