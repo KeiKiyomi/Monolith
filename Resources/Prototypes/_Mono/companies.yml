@@ -175,7 +175,13 @@
   color: "#419E23"
   image: /Textures/_Mono/Companies/BMC.png
 
-
+- type: company
+  id: inyaradynamics
+  form: Protagonist
+  name: Inyara Dynamics
+  description: inyara-dynamics-description
+  color: "#419E23"
+  #image: 
 # Religious groups
 
 #- type: company
